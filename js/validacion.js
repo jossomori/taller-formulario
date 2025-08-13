@@ -24,7 +24,7 @@ function validateForm() {
         return false;
     }
     // Validar que ambas contraseñas son iguales
-    else if (contraseña.value !== contraseña2.value) {
+    else if (contraseña !== contraseña2) {
         return false;
     }
     // Validar que el checkbox está marcado

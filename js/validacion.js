@@ -9,9 +9,14 @@ function showAlertError() {
 // Actividad 7.3:
 function validateForm() {
     let passInput = document.getElementById("password1");
+    let checkbox = document.getElementById("terminos");
 
     // Validar que el campo de contraseña no esté vacío
     if (passInput.value.length < 6) {
+        return false;
+    }
+    // Validar que el checkbox está marcado
+    else if (!checkbox.checked) {
         return false;
     }
     else {
